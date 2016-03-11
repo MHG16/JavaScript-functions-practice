@@ -35,7 +35,20 @@ function sum(){
 
     // .. do something with each element of args
     // YOUR CODE HERE
+    var sum = 0; 
+
+   
+// here I am using the array args and using forEach on it 
+// the function called by forEach is called add and is defined inline here.  
+    args.forEach(function add (currentValue, index, array) {
+        sum = currentValue + sum; 
+    }); 
+
+    return sum; 
 }
+
+
+
 
 console.assert( sum(1, 2, 3, 4, 5) === 15 )
 
