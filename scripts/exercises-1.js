@@ -60,6 +60,14 @@ function average(){
 
     // .. do something with each element of args
     // YOUR CODE HERE
+    var total = 0;
+    var average = 0;
+
+    for (var i = 0; i < args.length; i++) {
+        total = total + args[i]
+    }
+    average = total / args.length; 
+    return average;  
 }
 
 console.assert( average(2, 4, 6, 8) === 5 )
