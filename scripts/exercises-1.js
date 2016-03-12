@@ -48,8 +48,6 @@ function sum(){
 }
 
 
-
-
 console.assert( sum(1, 2, 3, 4, 5) === 15 )
 
 // 2. calculate the average of numbers (returns the average (A NUMBER))
@@ -80,6 +78,17 @@ function largest(){
 
     // .. do something with each element of args
     // YOUR CODE HERE
+
+    var largest = 0;
+
+    args.forEach(function getBiggest(currentValue, index, array) {
+        if(currentValue > largest) {
+            largest  = currentValue;
+        }
+
+
+    })
+    return largest; 
 }
 
 console.assert( largest(2, 4, 6, 8) === 8 )
@@ -92,6 +101,15 @@ function longest(){
 
     // .. do something with each element of args
     // YOUR CODE HERE
+
+    var longest = "";
+
+    args.forEach(function findLongestString(currentValue, index, array) {
+        if(currentValue.length > longest.length) {
+            longest = currentValue; 
+        }
+     })   
+        return longest; 
 }
 
  console.assert( longest("this", "is", "a", "awesome", "function") === "function" );
