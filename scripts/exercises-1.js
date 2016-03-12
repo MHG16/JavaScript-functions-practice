@@ -123,13 +123,27 @@ function longest(){
  * 2. write a console.assert to test them
  */
 
-// .sort()
+// .sort() method sorts the elements of an array in place and returns the array.  
 
-// .concat()
+var animals = ["fish", "dog", "horse", "cat", "elephant"];
 
-// .indexOf()
+console.assert(animals.sort() === ["cat", "dog", "elephant", "fish", "horse"]);
 
-// .split()
+// .concat() method returns a new array made up of the array on which it is based joined with the additional arrays.
+
+// var dogs = ["poodle", "chow", "retriever"];
+// var cats = ["tabby", "Siamese", "calico"];
+
+// console.assert(
+
+// .indexOf() method returns the first index in the array at which the item can be found or -1 if the item is not present.
+
+var stuff = ["pencil", "paper", "eraser", "calculator", "eraser", "pen"];
+
+console.assert(stuff.indexOf("eraser") === 2);
+
+
+// .split() method 
 
 // .join()
 
