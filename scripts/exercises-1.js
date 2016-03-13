@@ -192,7 +192,28 @@ var size = ["tiny", "large", "medium"];
 
 console.assert(size.unshift("huge") === 4);
 
-
 // .filter() creates a new array with all elements that pass the test of the provided function. 
 
+var numbers = [34, 51, 17, 65, 70, 8, 90];
+var number; 
+
+function greaterThanFifty(number) {
+  return number > 50; 
+} 
+
+console.assert(numbers.filter(greaterThanFifty) === [51, 65, 70, 90]); 
+
 // .map() creates a new array with the results of calling a provided function on each element of the array.
+
+var numbers = [7, 9, 25, 28, 34];
+var number 
+
+function multiplyByThree(number) {
+    return number = number * 3;  
+}
+
+console.assert(numbers.map(multiplyByThree) === [21, 27, 75, 84, 102]);
+
+
+
+
