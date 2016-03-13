@@ -127,7 +127,8 @@ function longest(){
 
 var animals = ["fish", "dog", "horse", "cat", "elephant"];
 
-console.assert(animals.sort() === ["cat", "dog", "elephant", "fish", "horse"]);
+// we can't compare arrays using "===", so we conert both arrays to a string first and then compare
+console.assert((animals.sort()).toString() === ["cat", "dog", "elephant", "fish", "horse"].toString());
 
 // .concat() method returns a new array made up of the array on which it is based joined with the additional arrays.
 
@@ -154,7 +155,7 @@ console.assert(sentence.split(" ") === ["I", "am", "learning", "how", "to", "use
 
 var array = ["red", "white", "blue"];
 
-console.assert(array.join() === "red,white,blue")
+console.assert(array.join() === "red,white,blue");
 
 
 // .pop() method removes the last element of an array and returns that element.
@@ -214,7 +215,7 @@ var numbers = [7, 9, 25, 28, 34];
 var number 
 
 function multiplyByThree(number) {
-    return number = number * 3;  
+    return number * 3;  
 }
 
 console.assert(numbers.map(multiplyByThree) === [21, 27, 75, 84, 102]);
