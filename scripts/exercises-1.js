@@ -127,7 +127,7 @@ function longest(){
 
 var animals = ["fish", "dog", "horse", "cat", "elephant"];
 
-// we can't compare arrays using "===", so we conert both arrays to a string first and then compare
+// we can't compare arrays using "===", so we convert both arrays to a string first and then compare
 console.assert((animals.sort()).toString() === ["cat", "dog", "elephant", "fish", "horse"].toString());
 
 // .concat() method returns a new array made up of the array on which it is based joined with the additional arrays.
@@ -135,7 +135,7 @@ console.assert((animals.sort()).toString() === ["cat", "dog", "elephant", "fish"
 var dogs = ["poodle", "chow", "retriever"];
 var cats = ["tabby", "Siamese", "calico"];
 
-console.assert(dogs.concat(cats) === ["poodle", "chow", "retriever", "tabby", "Siamese", "calico"]);
+console.assert((dogs.concat(cats)).toString() === ["poodle", "chow", "retriever", "tabby", "Siamese", "calico"].toString());
 
 // .indexOf() method returns the first index in the array at which the item can be found or -1 if the item is not present.
 
@@ -148,7 +148,7 @@ console.assert(stuff.indexOf("eraser") === 2);
 
 var sentence = "I am learning how to use methods on arrays.";
 
-console.assert(sentence.split(" ") === ["I", "am", "learning", "how", "to", "use", "methods", "on", "arrays."]);
+console.assert((sentence.split(" ")).toString() === ["I", "am", "learning", "how", "to", "use", "methods", "on", "arrays."].toString());
 
 
 // .join() method joins all elements of an array into a string.
