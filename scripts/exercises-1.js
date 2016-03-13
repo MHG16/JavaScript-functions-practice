@@ -131,10 +131,10 @@ console.assert(animals.sort() === ["cat", "dog", "elephant", "fish", "horse"]);
 
 // .concat() method returns a new array made up of the array on which it is based joined with the additional arrays.
 
-// var dogs = ["poodle", "chow", "retriever"];
-// var cats = ["tabby", "Siamese", "calico"];
+var dogs = ["poodle", "chow", "retriever"];
+var cats = ["tabby", "Siamese", "calico"];
 
-// console.assert(
+console.assert(dogs.concat(cats) === ["poodle", "chow", "retriever", "tabby", "Siamese", "calico"]);
 
 // .indexOf() method returns the first index in the array at which the item can be found or -1 if the item is not present.
 
@@ -163,12 +163,15 @@ console.assert(trees.pop() === "elm");
 
 // .push() method adds one or more elements to an array and returns the new length of the array.
 
-var cars = ["Toyota", "Ford", "Nissan"]
+var cars = ["Toyota", "Ford", "Nissan"];
 
-console.assert(cars.push("Honda, Chrylser") === 5);
+console.assert(cars.push("Honda", "Chrylser") === 5);
 
-// .slice() method 
+// .slice() method returns a shallow copy of a portion of an array into a new array object.
 
+var plants =  ["grass", "tree", "shrub", "weed", "vine"];
+
+console.assert(plants.slice(1, 4) === ["tree", "shrub", "weed"]);
 
 
 // .splice() method changes an array by removing elements or adding elements.  
@@ -178,11 +181,17 @@ console.assert(cars.push("Honda, Chrylser") === 5);
 
 // .shift() method removes the first element of an array and returns that element.
 
-var hotels = ["hyatt", "holiday inn", "mariott", "westin"];
+var chocolate = ["milk", "dark", "white"];
 
-console.assert(hotels.shift() === ""
+console.assert(chocolate.shift() === "milk");
+
 
 // .unshift() method adds one or more elements to an array and returns the array's new length.
+
+var size = ["tiny", "large", "medium"];
+
+console.assert(size.unshift("huge") === 4);
+
 
 // .filter() creates a new array with all elements that pass the test of the provided function. 
 
