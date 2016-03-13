@@ -175,14 +175,14 @@ console.assert(cars.push("Honda", "Chrylser") === 5);
 
 var plants =  ["grass", "tree", "shrub", "weed", "vine"];
 
-console.assert(plants.slice(1, 4) === ["tree", "shrub", "weed"]);
+console.assert((plants.slice(1, 4)).toString() === ["tree", "shrub", "weed"].toString());
 
 
 // .splice() method changes an array by removing elements or adding elements.  
 
 var materials = ["wood", "metal", "stone", "plastic", "glass"];
 
-console.assert(materials.splice(2, 2) === ["stone", "plastic"]);
+console.assert((materials.splice(2, 2)).toString() === ["stone", "plastic"].toString());
 
 
 // .shift() method removes the first element of an array and returns that element.
@@ -207,7 +207,7 @@ function greaterThanFifty(number) {
   return number > 50; 
 } 
 
-console.assert(numbers.filter(greaterThanFifty) === [51, 65, 70, 90]); 
+console.assert((numbers.filter(greaterThanFifty)).toString() === [51, 65, 70, 90].toString()); 
 
 // .map() creates a new array with the results of calling a provided function on each element of the array.
 
@@ -218,7 +218,7 @@ function multiplyByThree(number) {
     return number * 3;  
 }
 
-console.assert(numbers.map(multiplyByThree) === [21, 27, 75, 84, 102]);
+console.assert((numbers.map(multiplyByThree)).toString() === [21, 27, 75, 84, 102].toString());
 
 
 
