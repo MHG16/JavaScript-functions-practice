@@ -145,20 +145,45 @@ console.assert(stuff.indexOf("eraser") === 2);
 
 // .split() method 
 
-// .join()
 
-// .pop()
 
-// .push()
+// .join() method joins all elements of an array into a string.
 
-// .slice()
+var array = ["red", "white", "blue"];
 
-// .splice()
+console.assert(array.join() === "red,white,blue")
 
-// .shift()
 
-// .unshift()
+// .pop() method removes the last element of an array and returns that element.
 
-// .filter()
+var trees = ["oak", "pecan", "willow", "sycamore", "elm"];
 
-// .map()
+console.assert(trees.pop() === "elm");
+
+
+// .push() method adds one or more elements to an array and returns the new length of the array.
+
+var cars = ["Toyota", "Ford", "Nissan"]
+
+console.assert(cars.push("Honda, Chrylser") === 5);
+
+// .slice() method 
+
+
+
+// .splice() method changes an array by removing elements or adding elements.  
+
+
+
+
+// .shift() method removes the first element of an array and returns that element.
+
+var hotels = ["hyatt", "holiday inn", "mariott", "westin"];
+
+console.assert(hotels.shift() === ""
+
+// .unshift() method adds one or more elements to an array and returns the array's new length.
+
+// .filter() creates a new array with all elements that pass the test of the provided function. 
+
+// .map() creates a new array with the results of calling a provided function on each element of the array.
