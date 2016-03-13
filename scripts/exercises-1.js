@@ -143,8 +143,11 @@ var stuff = ["pencil", "paper", "eraser", "calculator", "eraser", "pen"];
 console.assert(stuff.indexOf("eraser") === 2);
 
 
-// .split() method 
+// .split() method splits a string into an array of strings by separating the string into substrings.
 
+var sentence = "I am learning how to use methods on arrays.";
+
+console.assert(sentence.split(" ") === ["I", "am", "learning", "how", "to", "use", "methods", "on", "arrays."]);
 
 
 // .join() method joins all elements of an array into a string.
@@ -176,7 +179,9 @@ console.assert(plants.slice(1, 4) === ["tree", "shrub", "weed"]);
 
 // .splice() method changes an array by removing elements or adding elements.  
 
+var materials = ["wood", "metal", "stone", "plastic", "glass"];
 
+console.assert(materials.splice(2, 2) === ["stone", "plastic"]);
 
 
 // .shift() method removes the first element of an array and returns that element.
